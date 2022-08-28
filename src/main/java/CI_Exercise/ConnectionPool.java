@@ -39,6 +39,7 @@ public class ConnectionPool {
         Logger.getLogger("web").log(Level.INFO, logMsg);
         HikariConfig config = new HikariConfig();
         config.setDriverClassName("com.mysql.cj.jdbc.Driver");
+        config.addDataSourceProperty("oracle.jdbc.javaNetNio", "false");
         config.setJdbcUrl(url);
         config.setUsername(user);
         config.setPassword(password);
