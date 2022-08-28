@@ -15,7 +15,7 @@ public class ConnectionPool {
     private HikariDataSource ds;
     private static final String USER = "dev";
     private static final String PASSWORD = "ax2";
-    private static final String URL = "jdbc:mysql://localhost:3306/startcode_test?serverTimezone=Europe/Copenhagen";
+    private static final String URL = "jdbc:mysql://127.0.0.1:3306/startcode_test?serverTimezone=Europe/Copenhagen";
 
 
     public ConnectionPool() {
